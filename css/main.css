@@ -1,0 +1,3 @@
+.p-row {width:120px;clear:both;}
+.p-row .p-grid {float:left;width:20px;height:20px;}
+.p-row .p-grid:last-of-type {float:right;}

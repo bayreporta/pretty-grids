@@ -2,11 +2,14 @@ var prettyGrids = {
 	calibrate:{
 		totalX: 6,
 		totalY: 16,
-		totalCanvas:1,
+		totalCanvas:2,
 		gridSize: 20,
-		path:'data'
+		path:'data',
+		colors:['#a1d76a','#ddd','#e9a3c9'],
+		categories:['increase','no change','decline']
 	},
 	data:[],
+	output:[],
 	populateGrid: function(c){
 		var contain = document.getElementById('p-contain');
 		for (var i=0 ; i < c.totalCanvas; i++){
@@ -33,19 +36,27 @@ var prettyGrids = {
 			fragContain.appendChild(canvas);
 			contain.appendChild(fragContain);	
 		}
-		prettyGrids.populateData(prettyGrids.data, c);
+		prettyGrids.populateData(prettyGrids.data, c, prettyGrids.output);
 	},
 	populateData: function(d, c){
-		/*convert data structure to work with this app*/
-		
-
-		/*for (var i=0 ; i < c.totalCanvas; i++){
+		for (var i=0 ; i < c.totalCanvas; i++){
 			for (var ii=0; ii < c.totalY ; ii++){		
 				for (var iii = 0 ; iii < c.totalX ; iii++){
-					$('.p-canvas:eq('+i+') .p-row:eq('+ii+') .p-grid:eq('+iii+')').attr('label',)
+					$('.p-canvas:eq('+i+') .p-row:eq('+ii+') .p-grid:eq('+iii+')').attr({
+						'label': d[i][ii][iii][0],
+						'data': d[i][ii][iii][1],
+						'category': d[i][ii][iii][2]
+					});
+
+					/* CHECK CATEGORY AND COLOR GRID */
+					for (var v=0 ; v < c.categories.length ; v++){
+						if (d[i][ii][iii][2] === c.categories[v]){
+							$('.p-canvas:eq('+i+') .p-row:eq('+ii+') .p-grid:eq('+iii+')').css('background', c.colors[v]);
+						}
+					}
 				}
 			}	
-		}*/
+		}
 	},
 	importJSON: function(path){
 		$.getJSON('data/' + path + '.json', function (d) {

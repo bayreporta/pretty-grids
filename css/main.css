@@ -1,3 +1,15 @@
-.p-row {width:120px;clear:both;}
-.p-row .p-grid {float:left;width:20px;height:20px;}
+#p-main {max-width:800px;}
+#p-main p, li, a, span, div {font-family: 'Gentium Basic', serif;line-height: 1.5em;}
+#p-main h1,h2,h3 {font-family: 'roboto condensed', san-serif;}
+
+#p-title {min-height:205px;}
+#p-title>div {float: left;width:40%;padding: 10px 5%;text-align: center;}
+#p-title p {text-align: left;margin: 20px 0;}
+
+.p-canvas {float:left;padding: 10px 5%;width: 25%;}
+.p-canvas:first-of-type {margin-left: 13%;}
+.p-canvas:last-of-type {float:right;}
+
+.p-row {width:132px;clear:both;}
+.p-row .p-grid {float:left;width:20px;height:20px;cursor:pointer;border:1px #fff solid;}
 .p-row .p-grid:last-of-type {float:right;}

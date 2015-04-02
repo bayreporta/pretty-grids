@@ -1,59 +1,117 @@
-Label,x_value,y_value,data,data_category
-Del Norte,0,0,,
-Siskiyou,1,0,,
-Modoc,2,0,,
-Humboldt,0,1,,
-Trinity,1,1,,
-Shasta,2,1,,
-Lassen,3,1,,
-Mendocino,0,2,,
-Tehama,1,2,,
-Butte,2,2,,
-Plumas,3,2,,
-Sonoma,0,3,,
-Lake,1,3,,
-Glenn,2,3,,
-Yuba,3,3,,
-Sierra,4,3,,
-Marin,0,4,,
-Napa,1,4,,
-Colusa,2,4,,
-Sutter,3,4,,
-Nevada,4,4,,
-Solano,1,5,,
-Yolo,2,5,,
-Placer,3,5,,
-El Dorado,4,5,,
-Sacramento,3,6,,
-Amador,4,6,,
-Alpine,5,6,,
-San Francisco,0,7,,
-Contra Costa,2,7,,
-San Joaquin,3,7,,
-Calaveras,4,7,,
-Mono,5,7,,
-San Mateo,0,8,,
-Santa Clara,1,8,,
-Alameda,2,8,,
-Stanislaus,3,8,,
-Tuolumne,4,8,,
-Santa Cruz,1,9,,
-San Benito,2,9,,
-Merced,3,9,,
-Mariposa,4,9,,
-Monterey,2,10,,
-Fresno,3,10,,
-Madera,4,10,,
-San Luis Obispo,2,11,,
-Kings,3,11,,
-Tulare,4,11,,
-Inyo,5,11,,
-Santa Barbara,2,12,,
-Ventura,3,12,,
-Kern,4,12,,
-San Bernardino,5,12,,
-Los Angeles,4,13,,
-Riverside,5,13,,
-Orange,4,14,,
-Imperial,5,14,,
-San Diego,5,15,,
+Label,canvas_value,x_value,y_value,data,data_category
+Del Norte,0,0,0,,no change
+Siskiyou,0,1,0,,decline
+Modoc,0,2,0,,no change
+Humboldt,0,0,1,,decline
+Trinity,0,1,1,,decline
+Shasta,0,2,1,,decline
+Lassen,0,3,1,,decline
+Mendocino,0,0,2,,decline
+Tehama,0,1,2,,decline
+Butte,0,2,2,,decline
+Plumas,0,3,2,,decline
+Sonoma,0,0,3,,decline
+Lake,0,1,3,,increase
+Glenn,0,2,3,,decline
+Yuba,0,3,3,,increase
+Sierra,0,4,3,,increase
+Marin,0,0,4,,decline
+Napa,0,1,4,,decline
+Colusa,0,2,4,,decline
+Sutter,0,3,4,,decline
+Nevada,0,4,4,,decline
+Solano,0,1,5,,decline
+Yolo,0,2,5,,decline
+Placer,0,3,5,,decline
+El Dorado,0,4,5,,decline
+Sacramento,0,3,6,,decline
+Amador,0,4,6,,decline
+Alpine,0,5,6,,no change
+San Francisco,0,0,7,,decline
+Contra Costa,0,2,7,,decline
+San Joaquin,0,3,7,,decline
+Calaveras,0,4,7,,decline
+Mono,0,5,7,,decline
+San Mateo,0,0,8,,decline
+Santa Clara,0,1,8,,increase
+Alameda,0,2,8,,decline
+Stanislaus,0,3,8,,decline
+Tuolumne,0,4,8,,decline
+Santa Cruz,0,1,9,,increase
+San Benito,0,2,9,,decline
+Merced,0,3,9,,decline
+Mariposa,0,4,9,,decline
+Monterey,0,2,10,,decline
+Fresno,0,3,10,,decline
+Madera,0,4,10,,decline
+San Luis Obispo,0,2,11,,decline
+Kings,0,3,11,,decline
+Tulare,0,4,11,,increase
+Inyo,0,5,11,,decline
+Santa Barbara,0,2,12,,decline
+Ventura,0,3,12,,decline
+Kern,0,4,12,,decline
+San Bernardino,0,5,12,,decline
+Los Angeles,0,4,13,,decline
+Riverside,0,5,13,,decline
+Orange,0,4,14,,decline
+Imperial,0,5,14,,decline
+San Diego,0,5,15,,decline
+Del Norte,1,0,0,,decline
+Siskiyou,1,1,0,,decline
+Modoc,1,2,0,,increase
+Humboldt,1,0,1,,increase
+Trinity,1,1,1,,no change
+Shasta,1,2,1,,decline
+Lassen,1,3,1,,increase
+Mendocino,1,0,2,,no change
+Tehama,1,1,2,,increase
+Butte,1,2,2,,decline
+Plumas,1,3,2,,decline
+Sonoma,1,0,3,,decline
+Lake,1,1,3,,decline
+Glenn,1,2,3,,decline
+Yuba,1,3,3,,decline
+Sierra,1,4,3,,decline
+Marin,1,0,4,,increase
+Napa,1,1,4,,decline
+Colusa,1,2,4,,no change
+Sutter,1,3,4,,decline
+Nevada,1,4,4,,decline
+Solano,1,1,5,,decline
+Yolo,1,2,5,,increase
+Placer,1,3,5,,increase
+El Dorado,1,4,5,,decline
+Sacramento,1,3,6,,decline
+Amador,1,4,6,,increase
+Alpine,1,5,6,,decline
+San Francisco,1,0,7,,increase
+Contra Costa,1,2,7,,decline
+San Joaquin,1,3,7,,decline
+Calaveras,1,4,7,,increase
+Mono,1,5,7,,decline
+San Mateo,1,0,8,,decline
+Santa Clara,1,1,8,,increase
+Alameda,1,2,8,,increase
+Stanislaus,1,3,8,,increase
+Tuolumne,1,4,8,,decline
+Santa Cruz,1,1,9,,increase
+San Benito,1,2,9,,increase
+Merced,1,3,9,,increase
+Mariposa,1,4,9,,increase
+Monterey,1,2,10,,decline
+Fresno,1,3,10,,increase
+Madera,1,4,10,,increase
+San Luis Obispo,1,2,11,,increase
+Kings,1,3,11,,increase
+Tulare,1,4,11,,increase
+Inyo,1,5,11,,increase
+Santa Barbara,1,2,12,,increase
+Ventura,1,3,12,,increase
+Kern,1,4,12,,decline
+San Bernardino,1,5,12,,increase
+Los Angeles,1,4,13,,decline
+Riverside,1,5,13,,increase
+Orange,1,4,14,,increase
+Imperial,1,5,14,,decline
+San Diego,1,5,15,,increase

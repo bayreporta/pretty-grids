@@ -1,4 +1,4 @@
-#p-main {max-width:800px;margin-top: 25px;}
+#p-main {max-width:800px;  padding-top: 25px;  border-top: 1px #aaa solid;}
 p, li, a, span, div {font-family: 'Gentium Basic', serif;line-height: 1.5em;}
 h1,h2,h3, .p-legend p {font-family: 'roboto condensed', san-serif;}
 
@@ -24,5 +24,5 @@ h1,h2,h3, .p-legend p {font-family: 'roboto condensed', san-serif;}
 .p-row .p-grid:last-of-type {float:right;}
 
 #p-overall {margin: 10px 3%;}
-#p-overall p:first-of-type {margin: 0 auto 20px auto; font-family: "roboto condensed";  cursor: pointer;  width: 127px;}
+#p-overall p:first-of-type {margin: 0 auto 20px auto; font-family: "roboto condensed";  cursor: pointer;  width: 345px;}
 #p-overall p:first-of-type:hover {color:#aaa;text-decoration: underline;} 

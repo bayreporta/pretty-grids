@@ -2,6 +2,7 @@ var prettyGrids = {
 	calibrate:{
 		totalX: 6,
 		totalY: 16,
+		totalGrid: 0, 
 		totalCanvas:2,
 		gridSize: 20,
 		path:'data',
@@ -11,6 +12,9 @@ var prettyGrids = {
 	data:[],
 	output:[],
 	populateGrid: function(c){
+		/* grids per canvas */
+		this.calibrate.totalGrid = this.calibrate.totalX * this.calibrate.totalY;
+
 		var contain = document.getElementById('p-contain');
 		for (var i=0 ; i < c.totalCanvas; i++){
 			var canvas = document.createElement('div'), fragContain = document.createDocumentFragment();
@@ -57,6 +61,14 @@ var prettyGrids = {
 						if (d[i][ii][iii][2] === c.categories[v]){
 							$('.p-canvas:eq('+i+') .p-row:eq('+ii+') .p-grid:eq('+iii+')').css('background', c.colors[v]);
 						}
+					}
+
+					/* ADD TOOLTIP */
+					if (d[i][ii][iii][0]){
+						$('.p-canvas:eq('+i+') .p-row:eq('+ii+') .p-grid:eq('+iii+')').caltip({
+							title: d[i][ii][iii][0],
+							titlefont: 'bold 1.1em "roboto condensed", san-serif',
+						});
 					}
 				}
 			}	
